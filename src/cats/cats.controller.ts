@@ -10,8 +10,8 @@ interface catDto {
 @Controller('cats')
 export class CatsController {
   @Get()
-  getCats(@Req() request: Request, @Res() response) {
-    return "index"
+  getCats() {
+    return cats
   }
 
   @Post()
